@@ -1,0 +1,62 @@
+/*Settings for numbers on the index page*/
+.numbers {
+	font-size: 2em;
+	width: auto;
+	text-align: center;
+	border-radius: 5em;
+	margin-bottom: 0.2em;
+	color: white;
+	background-color: #d2323b;
+	padding: 0 5em 0 5em;
+}
+
+/*Logo settings*/
+.logo {
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+	position: absolute;
+	float: right;
+}
+
+h1 {
+	display: inline;
+}
+
+.guess-combination {
+	text-align: center;
+}
+
+.graphs {
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.chart-div {
+	font-size: 2em;
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 1em;
+}
+
+body {
+	animation: fadein 1s;
+	font-family: 'KoHo', sans-serif;
+	background-color: #fcfafb;
+}
+
+@keyframes fadein {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+footer {
+	text-align: center;
+}

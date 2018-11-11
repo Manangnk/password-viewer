@@ -1,0 +1,39 @@
+{% extends 'viewerfrontend/base.html' %}
+{% load static %}
+
+{% block extrahead %}
+	<script type = "text/javascript" src = "{% static 'js/guess.js' %}"></script>
+	<link rel = "stylesheet" href = "{% static 'css/index.css' %}">
+	<script src="https://d3js.org/d3.v3.min.js"></script>
+{% endblock extrahead %}
+{% block body %}
+<nav class = "navbar navbar-expand-lg navbar-light bg-light">
+	<img class = "logo" src = "{% static 'img/favicon.png' %}">
+	<div class = "mx-auto"><h1>Password Viewer</h1></div></nav>
+	<div class = "container">
+		<div class = "guess-combination">
+			<h2>Top Guesses:</h2>
+			<span class = "numbers head" id = "num1">_</span><br>
+			<span class = "numbers head" id = "num2">_</span><br>
+			<span class = "numbers head" id = "num3">_</span><br>
+			<span class = "numbers head" id = "num4">_</span><br>
+			<span class = "numbers head" id = "num5">_</span><br>
+		</div>
+		<h2>Probability graphs for digits in the topmost (most likely correct) guess:</h2>
+		<div class = "graphs">
+			<div class = "chart-div">First Digit:<br>
+				<svg class = "chart0"></svg>
+			</div>
+			<div class = "chart-div">Second Digit:<br>
+				<svg class = "chart1"></svg>
+			</div>
+			<div class = "chart-div">Third Digit:<br>
+				<svg class = "chart2"></svg>
+			</div>
+			<div class = "chart-div">Fourth Digit:<br>
+				<svg class = "chart3"></svg>
+			</div>
+		</div>
+	</div>
+	<footer><a href="http://www.freepik.com">Logo designed by Freepik</a></footer>
+{% endblock body %}

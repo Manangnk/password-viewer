@@ -1,7 +1,7 @@
 import cv2    # For Splitting video into frames
 
 
-# Input: A video
+# Input: A video filename *has to be in the same directory*
 # Output: All frames converted to images in the same directory that the 
 # video is from.
 def video_to_frames(video):
