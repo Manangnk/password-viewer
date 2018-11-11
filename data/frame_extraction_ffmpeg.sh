@@ -1,1 +1,2 @@
-ffmpeg -i hack_p2.mov -f image2 image-%05d.jpg
+ffmpeg -i person.mov -r 24 -f image2 vidya/person/%d.jpg
+ffmpeg -i screen.mov -r 24 -f image2 vidya/screen/%d.jpg
